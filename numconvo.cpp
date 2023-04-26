@@ -49,8 +49,11 @@ public:
             {
                 digit = number[i] - 'A' + 10;
             }
+     // Add the digit times the appropriate power of the radix to the decimal number
+            decimalNumber += digit * power;
+            power *= radix1;
         }
+        return decimalNumber;
     }
-    
     
 };
