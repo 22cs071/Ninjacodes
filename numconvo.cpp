@@ -79,6 +79,16 @@ public:
         }
         return result;
     }
-    
+     // Convert a number from radixA to radixB
+    void convertRadix()
+    {
+        // Convert the number to decimal
+        int decimalNumber = toDecimal();
+
+        // Convert the decimal number to the desired radix
+        string result = toRadix(decimalNumber);
+
+        cout << number << " in base " << radix1 << " is " << result << " in base " << radix2 << endl;
+    }
 
 };
