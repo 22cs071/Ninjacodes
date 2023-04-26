@@ -10,4 +10,16 @@ class RadixConverter
     int radix1, radix2;
 
 public:
+
+    RadixConverter() {}
+    ~RadixConverter() {}
+
+    void get_number(void)
+    {
+        cout << "Enter Radix of number : ";
+        cin >> radix1;
+        cout << "Enter Number : ";
+        cin >> number;
+         
+    }
 };
